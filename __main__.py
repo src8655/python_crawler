@@ -1,7 +1,6 @@
 import time
 from itertools import count
 
-import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
@@ -38,9 +37,9 @@ def crawling_pelicana():
     #     print(t)
 
     # store
-    table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
-    table.to_csv('__results__/pelicana.csv', encoding='utf-8', mode='w', index=True)
-    print(table)
+    # table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
+    # table.to_csv('__results__/pelicana.csv', encoding='utf-8', mode='w', index=True)
+    # print(table)
 
 
 # 과제임
@@ -113,9 +112,9 @@ def crawling_kyochon():
                 results.append((name, address) + tuple(sidogu))
 
     # store
-    table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
-    table.to_csv('__results__/kyochon.csv', encoding='utf-8', mode='w', index=True)
-    print(table)
+    # table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
+    # table.to_csv('__results__/kyochon.csv', encoding='utf-8', mode='w', index=True)
+    # print(table)
 
 
 def crawling_goobne():
@@ -150,9 +149,9 @@ def crawling_goobne():
             results.append((name, address) + tuple(sidogu))
 
     # store
-    table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
-    table.to_csv('__results__/goobne.csv', encoding='utf-8', mode='w', index=True)
-    print(table)
+    # table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
+    # table.to_csv('__results__/goobne.csv', encoding='utf-8', mode='w', index=True)
+    # print(table)
 
     wd.quit()
 
