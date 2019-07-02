@@ -1,10 +1,5 @@
-import os
-import sys
 import time
-from datetime import datetime
 from itertools import count
-from urllib.request import Request, urlopen
-import ssl
 
 import pandas as pd
 from bs4 import BeautifulSoup
