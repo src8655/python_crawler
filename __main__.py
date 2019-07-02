@@ -76,17 +76,17 @@ def crawling_nene():
             t = (name, address, sido, gugun)
             results.append(t)
 
-    # for t in results:
-    #     print(t)
+    for t in results:
+        print(t)
 
     # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     # RESULT_DIR = '{0}/__results__/nene.csv'.format(BASE_DIR)
     # print(RESULT_DIR)
 
     # store
-    table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
-    table.to_csv('/root/crawling-results/nene.csv', encoding='utf-8', mode='w', index=True)
-    print(table)
+    # table = pd.DataFrame(results, columns=['name', 'address', 'sido', 'gugun'])
+    # table.to_csv('/root/crawling-results/nene.csv', encoding='utf-8', mode='w', index=True)
+    # print(table)
 
 
 def crawling_kyochon():
